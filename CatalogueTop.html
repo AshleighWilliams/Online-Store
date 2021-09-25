@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <!--Bootstrap CSS-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+        <!--External CSS link-->
+        <link rel="stylesheet" type="text/css" href="AllWebpages.css">
+        <!--ION ICON link-->
+        <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+        <!--External CSS link-->
+        <link rel="stylesheet" type="text/css" href="Catalogue.css">
+
+        <title>CatalogueTop</title>
+        <style>
+            .nav {
+                background-color: burlywood;
+                position: relative;
+                text-align: center;
+                top: 0%;
+                width: 100%;
+            }
+            /*The above styles the navigation bar.*/
+
+            .navbar {
+                float: left;
+                text-decoration: none;
+                color: white;
+                display: block;
+                padding: 8px;
+            }
+            /*The above styles the navigation bar.*/   
+
+            .navbar:hover {
+                text-decoration: none;
+                color: black
+            }
+            /*The above styles the navigation bar when it is hovered over.*/
+
+            h1,
+            h4 {
+                text-align: center;
+            }
+        </style>
+    </head>
+
+    <body>
+        <nav>
+        <ul class="nav">
+            <li><a class="navbar" href="Home.html">Home</a></li>
+            <li><a class="navbar" href="AboutUs.html">About Us</a></li>
+            <li><a class="navbar" href="Catalogue.html">Catalogue</a></li>
+            <li><a class="navbar" href="DeliveryAndCollection.html">Delivery and Collection</a></li>
+            <li><a class="navbar" href="ExchangesAndReturns.html">Exchanges and Returns</a></li>
+            <li><a class="navbar" href="ContactUs.html">Contact Us</a></li>
+            <li class="cart"><a class="navbar" href="Cart.html"><ion-icon name="basket" role="img" class="md hydrated" aria-label="basket"></ion-icon>Cart<span>0</span></a></li>
+            <li><div class="dropdown">
+                <button onclick="myFunction()" class="dropbtn">Search</button>
+                    <div id="myDropdown" class="dropdown-content">
+                    <input type="text" placeholder="Search Catalogue" id="myInput" onkeyup="filterFunction()">
+                    <a href="CataloguePuffer.html">Puffer Jacket</a>
+                    <a href="CataloguePants.html">Culotte Pants</a>
+                    <a href="CatalogueTop.html">Polo-neck Top</a>
+                    <a href="CatalogueDress.html">Mid-length Dress</a>
+                    <a href="CatalogueShacket.html">Soft Shacket</a>
+                    </div>
+                </div>
+                <!--The above uses "myFunction()" to create a search bar using a dropdown list.-->
+            </li>
+        </ul>
+        </nav>
+        <!--The above uses a list element to create a navigation bar.-->
+
+        <br>
+        <br>
+
+        <h1>Neutrals Or Nothing</h1>
+
+        <br>
+
+        <h4>20% off Winter Catalogue Sale:</h4>
+
+        <br>
+
+        <div class="container">
+            <h5>This soft white ribbed polo neck is warm and cosy for all your winter blues. This item is a winter staple!</h5> 
+            <h5>Only 1 Size XL left!</h5>
+            <div class="image">
+                <img class="picture" src="Images/image5.jpg" alt="polonecktop">
+                <h5>Polo-neck Top</h5>
+                <h5>R159.99</h5>
+                <a class="add-cart cart3" href="#">Add to Cart</a>
+              </div>
+        </div>
+        <!--The above uses the div element to display a catalogue item in a card style.-->
+
+        <!--ION ICON JS link-->
+        <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+        <!--External JS link-->
+        <script type="text/javascript" src="Cart.js"></script>
+        <!--External JQuery link-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+        <script src="AllWebpages.js"></script>
+    </body>
+</html>

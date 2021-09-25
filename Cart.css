@@ -1,0 +1,82 @@
+/*CSS for the Cart.html*/
+
+.products-container {
+    max-width: 650px;
+    justify-content: space-around;
+    margin: 0 auto;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-bottom: 100px;
+}
+/*Above styles the div for the cart display.*/
+
+.product-header {
+    width:100%;
+    max-width: 650px;
+    display: flex;
+    justify-content: flex-start;
+    border-bottom: 4px solid black;
+    margin: 0 auto;
+}
+/*Above styles the header of the cart div.*/
+
+.product-title {
+    width:45%;
+}
+/*Above styles the item title.*/
+
+.price {
+    width: 15%;
+    display: flex;
+    align-items: center;
+}
+/*Above styles the price when displayed.*/
+
+.quantity {
+    width: 30%;
+    display: flex;
+    align-items: center;
+}
+/*Above styles the quantity when displayed.*/
+
+.total {
+    width: 10%;
+    border-bottom: 1px solid black;
+    display: flex;
+    align-items: center;
+}
+/*Above styles the total when displayed.*/
+
+.product {
+    width: 45%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid black;
+}
+/*Above styles the item when displayed.*/
+
+.basketTotalContainer {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    padding: 10px 0;
+}
+/*Above styles the total when displayed.*/
+
+.basketTotalTitle,
+.vat,
+.finalTotal {
+    width: 30%;
+}
+/*Above styles the total and vat when displayed.*/
+
+.basketTotal
+.basketTotalVat,
+.basketFinalTotal {
+    width: 10%;
+}
+/*Above styles the total and vat when displayed.*/

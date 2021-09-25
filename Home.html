@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!--Bootstrap CSS link-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+        <!--ION ICON CSS link-->
+        <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+        <!--External CSS link-->
+        <link rel="stylesheet" type="text/css" href="AllWebpages.css">
+
+        <title>Home</title>
+        <style>
+            .nav {
+                background-color: burlywood;
+                position: relative;
+                text-align: center;
+                top: 0%;
+                width: 100%;
+            }
+            /*The above styles the navigation bar.*/
+
+            .navbar {
+                float: left;
+                text-decoration: none;
+                color: white;
+                display: block;
+                padding: 8px;
+            }   
+            /*The above styles the navigation bar.*/
+
+            .navbar:hover {
+                text-decoration: none;
+                color: black;
+            }
+            /*The above styles the navigation bar when it is hovered over.*/
+
+            .form-inline,
+            .form-control {
+                float: right;
+            }
+
+            h1 {
+                text-align: center;
+            }
+
+            h4 {
+                text-align: center;
+                color: burlywood
+            }
+
+            h2 {
+                text-align: center;
+                color: burlywood;
+                font-style: oblique;
+            }
+
+            h3 {
+                color: black;
+                text-align: center;
+            }
+
+            .parent {
+                background-image: url(images/image8.JPG);
+                background-size: contain;
+                border: black;
+                width: 100%;
+                height: 200px;
+                padding: auto;
+                background-position: relative;
+            }
+
+            .text {
+                color:black;
+                text-align: left;
+            }
+
+            .center {
+                top: 50%;
+                left:50%;
+                transform: translate(-50% -50%);
+                font-style: italic;
+            }
+            /* parent, text and center is used to style text with background image. */
+
+            .container {
+                border: 2px solid burlywood;
+                background-color: burlywood;
+                border-radius: 5px;
+                padding: 16px;
+                margin: 16px 0;
+            }
+            /* This container element was used to style testimonials. */
+
+            .container::after {
+                content: "";
+                clear: both;
+                display: table;
+            }
+
+            .container img {
+               float: left;
+               margin-right: 20px;
+               border-radius: 50%;
+            }
+            /* This floats images to the left and as a circle. */
+
+            .btn-primary {
+                color: black;
+                background-color: burlywood;
+                border-color: burlywood;
+                padding: auto;
+            }
+            /*The above styles the sign up button.*/
+
+            .btn-primary:hover {
+                color:burlywood;
+                background-color: white;
+                text-decoration: none;
+                border-color: white;
+            }
+            /*The above styles the sign up button when it is hovered over.*/
+
+            #hide,
+            #show {
+                background-color: burlywood;
+            }
+            /*The above styles the hide and show buttons.*/
+
+            #hide:hover,
+            #show:hover {
+                background-color: white;
+                color: burlywood;
+            }
+            /*The above styles the hide and show buttons when it is hovered over.*/
+        </style>
+    </head>
+
+    <body>
+        <nav>
+        <ul class="nav">
+            <li><a class="navbar" href="Home.html">Home</a></li>
+            <li><a class="navbar" href="AboutUs.html">About Us</a></li>
+            <li><a class="navbar" href="Catalogue.html">Catalogue</a></li>
+            <li><a class="navbar" href="DeliveryAndCollection.html">Delivery and Collection</a></li>
+            <li><a class="navbar" href="ExchangesAndReturns.html">Exchanges and Returns</a></li>
+            <li><a class="navbar" href="ContactUs.html">Contact Us</a></li>
+            <li class="cart"><a class="navbar" href="Cart.html"><ion-icon name="basket" role="img" class="md hydrated" aria-label="basket"></ion-icon>Cart<span>0</span></a></li>
+            <li><div class="dropdown">
+                <button onclick="myFunction()" class="dropbtn">Search</button>
+                    <div id="myDropdown" class="dropdown-content">
+                    <input type="text" placeholder="Search Catalogue" id="myInput" onkeyup="filterFunction()">
+                    <a href="CataloguePuffer.html">Puffer Jacket</a>
+                    <a href="CataloguePants.html">Culotte Pants</a>
+                    <a href="CatalogueTop.html">Polo-neck Top</a>
+                    <a href="CatalogueDress.html">Mid-length Dress</a>
+                    <a href="CatalogueShacket.html">Soft Shacket</a>
+                    </div>
+                </div>
+                <!--The above uses "myFunction()" to create a search bar using a dropdown list.-->
+            </li>
+        </ul>
+        </nav>
+        <!--The above uses a list element to create a navigation bar.-->
+
+        <br>
+        <br>
+
+        <h1 onload="load()">Neutrals Or Nothing</h1>
+        <!--This "load()" allows for a chained effect to be displayed.--> 
+        <h2>It's NON Stop!</h2>
+        <h3>Your favourite go-to neutral wear.</h3>
+
+        <br>
+
+        <div class="parent">
+            <div class=" text center"> <h3><b>Catalogue Sale Now On! Catalogue Sale Now On! Catalogue Sale Now On! Catalogue Sale Now On!</b></h3> </div>
+        </div>
+        <!--The above is the text used on the images.-->
+
+        <br>
+        <hr>
+
+        <div class="container">
+            <img src="Images/image1.jpg" alt="Ashleigh Williams" style="width:90px" padding="auto" filter="grayscale (100%)">
+            <p><span>Ashleigh Williams</span> Customer</p>
+            <p>My new favourite online store! The items are exactly as seen online. </p>
+        </div>
+          
+        <div class="container">
+            <img src="Images/image2.png" alt="Anonymous" style="width:90px" padding="auto" filter="grayscale (100%)">
+            <p><span >Anonymous</span> Customer</p>
+            <p>Fast delivery and good customer service? Count me in! Will definitely be shopping here again.</p>
+        </div>
+        <!--This container creates a simple display of testimonials.-->
+
+        <br>
+
+        <button id="hide">Hide</button>
+        <button id="show">Show</button>
+        <!--The above creates buttons to allow for the hide and show animation.-->
+
+        <hr>
+
+        <form>
+            <h4>Subscribe to our newsletter to stay updated:</h4>
+            <div class="form-group row">
+                <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+                <div class="col-sm-10">
+                <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+                </div>
+           </div>
+            <div class="form-group row">
+                <label for="inputPhoneNumber3" class="col-sm-2 col-form-label">Phone Number</label>
+                <div class="col-sm-10">
+                <input type="email" class="form-control" id="inputPhoneNumber3" placeholder="Phone Number">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
+                <div class="col-sm-10">
+                <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+               </div>
+            </div>
+            <fieldset class="form-group">
+                <div class="row">
+                <label>Select your choice of Social Channel</label>
+                <select id='sizes'>
+                    <option value="Email">Email</option>
+                    <option value="SMS">SMS</option>
+                </select>
+                <!-- This select element creates a dropdown. -->
+            </div>
+            </fieldset>
+                <div class="form-group row">
+                <div class="col-sm-2">Terms and Conditions</div>
+                <div class="col-sm-10">
+                <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="gridCheck1">
+                <label class="form-check-label" for="gridCheck1">
+                     Agree
+                </label>
+                </div>
+                </div>
+            </div>
+                <div class="form-group row">
+                <div class="col-sm-10">
+                <button type="submit" class="btn btn-primary" onclick="myfunctions()">Sign up</button>
+                </div>
+            </div>
+        </form>
+        <!--This is a horizontal form with radio and a normal button.-->
+         
+        <!--ION ICON JS link-->
+        <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+        <!--External jQuery link-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+        <script src="AllWebpages.js"></script>
+    </body>
+</html>

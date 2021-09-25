@@ -1,0 +1,49 @@
+/*CSS for the Catalogue.html*/
+
+.container {
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    padding-bottom: 100px;
+}
+/*Above styles the container.*/
+
+.image {
+    margin-right: 20px;
+    margin-left: 20px;
+    position: relative;
+    overflow: hidden;
+}
+/*Above styles each div in the container div.*/
+
+.picture {
+    width: 300px;
+    height: 300px;
+}
+/*Above styles the items pictures.*/
+
+.add-cart {
+    position: absolute;
+    width:100%;
+    background-color: burlywood;
+    color: black;
+    transition: all 0.3s ease-in-out;
+    opacity: 0;
+    cursor: pointer;
+    text-align: center;
+}
+/*Above styles the add to cart button.*/
+
+.image:hover .cart1,
+.image:hover .cart2,
+.image:hover .cart3,
+.image:hover .cart4,
+.image:hover .cart5 {
+    bottom: 50px;
+    opacity: 1;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+}
+/*Above styles the cart button when hovered.*/

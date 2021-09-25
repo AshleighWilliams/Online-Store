@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!--Bootstrap CSS link-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+        <!--ION ICON CSS link-->
+        <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+        <!--External CSS link-->
+        <link rel="stylesheet" type="text/css" href="AllWebpages.css">
+
+        <title>Delivery and Collection</title>
+        <style>
+            .nav {
+                background-color: burlywood;
+                position: relative;
+                text-align: center;
+                top: 0%;
+                width: 100%;
+            }
+            /*The above styles the navigation bar.*/
+
+            .navbar {
+                float: left;
+                text-decoration: none;
+                color: white;
+                display: block;
+                padding: 8px;
+            }   
+            /*The above styles the navigation bar.*/
+
+            .navbar:hover {
+                text-decoration: none;
+                color: black
+            }
+            /*The above styles the navigation bar when it is hovered over.*/
+
+            body {
+                background-color: white;
+            }
+
+            h1 {
+                text-align: center;
+            }
+
+            h3 {
+                text-align: center;
+                color: burlywood;   
+            }
+
+            p {
+                text-align: center;
+                color: black;
+                font-style: normal;
+            }
+
+            a {
+                color: black;
+                text-decoration: none;
+            }
+            /*The above styles the link.*/
+
+            a:hover {
+                text-decoration: none;
+                color: burlywood;
+            }
+            /*The above styles the link when it is hovered over.*/
+        </style>
+    </head>
+
+    <body>
+        <nav>
+        <ul class="nav">
+            <li><a class="navbar" href="Home.html">Home</a></li>
+            <li><a class="navbar" href="AboutUs.html">About Us</a></li>
+            <li><a class="navbar" href="Catalogue.html">Catalogue</a></li>
+            <li><a class="navbar" href="DeliveryAndCollection.html">Delivery and Collection</a></li>
+            <li><a class="navbar" href="ExchangesAndReturns.html">Exchanges and Returns</a></li>
+            <li><a class="navbar" href="ContactUs.html">Contact Us</a></li>
+            <li class="cart"><a class="navbar" href="Cart.html"><ion-icon name="basket" role="img" class="md hydrated" aria-label="basket"></ion-icon>Cart<span>0</span></a></li>
+            <li><div class="dropdown">
+                <button onclick="myFunction()" class="dropbtn">Search</button>
+                    <div id="myDropdown" class="dropdown-content">
+                    <input type="text" placeholder="Search Catalogue" id="myInput" onkeyup="filterFunction()">
+                    <a href="CataloguePuffer.html">Puffer Jacket</a>
+                    <a href="CataloguePants.html">Culotte Pants</a>
+                    <a href="CatalogueTop.html">Polo-neck Top</a>
+                    <a href="CatalogueDress.html">Mid-length Dress</a>
+                    <a href="CatalogueShacket.html">Soft Shacket</a>
+                    </div>
+                </div>
+                <!--The above uses "myFunction()" to create a search bar using a dropdown list.-->
+            </li>
+        </ul>
+        </nav>
+        <!--The above uses a list element to create a navigation bar.-->
+
+        <br>
+        <br>
+
+        <h1>Neutrals Or Nothing</h1>
+
+        <br>
+        <br>
+
+        <h3>Delivery and Collection:</h3>
+        <br>
+            <p>There is no physical store which means that items can only be obtained through means of delivery or collection from our warehouse.</p>
+            <p>For delivery we use a local courier namely Fastway Couriers.</p>
+            <p>There are two delivery options:</p>
+            <table>
+                <tr>
+                    <th>Standard Delivery:</th>
+                    <th>Premium Delivery:</th>
+                </tr>
+                <tr>
+                    <td>Once you place an order the processing of items take up to 2 days. Thereafter, the items will be sent out and you will be able to track your delivery. Delivery will take between 4-6 working days. Cost is R60.</td>
+                    <td>Once you place an order the processing of items take up to 1 days. Thereafter, the items will be sent out and you will be able to track your delivery. Delivery will take place the following Saturday-Sunday. Cost is R90.</td>
+                </tr>
+            </table>
+            <!--The above creates a table.-->
+            <br>
+            <p> Feel free to visit the courier site to track your delivery: <a href="https://www.fastway.co.za/cape-town/" target="_blank">Fastway Couriers.</a></p>
+            <!--This creates an external link.-->
+            <br>
+            <p>Items can be collected from our warehouse that is based in Cape Town, South Africa. An address will be provided on the selection of collection and ypur items will be ready to be collected within 3 working days.</p>
+        
+        <!--ION ICON JS link-->
+        <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+        <!--External jQuery link-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+        <script src="AllWebpages.js"></script>
+    </body>
+</html>
